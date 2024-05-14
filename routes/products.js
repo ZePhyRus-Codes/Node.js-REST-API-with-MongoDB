@@ -3,7 +3,7 @@ const router = express.Router();
 const Product = require('../models/product');
 
 // Create a new product
-router.post('/products', async (req, res) => {
+router.post('/addproducts', async (req, res) => {
   try {
     const product = new Product({
       name: req.body.name,
@@ -53,4 +53,4 @@ router.delete('/products/:id', async (req, res) => {
   }
 });
 
-module.exports = router
+module.exports = router;

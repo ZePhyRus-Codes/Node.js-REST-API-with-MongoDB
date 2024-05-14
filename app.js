@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/mydatabase')
+mongoose.connect('mongodb://localhost:27017/Inventory')
   .then(() => {
     console.log('Connected to MongoDB');
   })
